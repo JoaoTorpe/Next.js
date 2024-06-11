@@ -1,9 +1,7 @@
 'use client'
 import styles  from "./page.module.css";
-
 export  default  function Card({articles}:any){
     localStorage.clear()
-    
     articles.forEach((e:any)=>{
         localStorage.setItem(e.title,JSON.stringify({"title":e.title,"content":e.content}))
         
